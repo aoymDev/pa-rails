@@ -48,8 +48,7 @@ class PeopleController < ApplicationController
     @people = Array.new
 
     if request.post? then
-      obj = Person.find params['find']
-      @people.push obj
+      @people = Person.where name: params[:find]
     end
   end
 
