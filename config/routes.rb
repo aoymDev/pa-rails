@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get 'cards/delete/:id', to: 'cards#delete'
 
   get 'people/index'
+  get 'people/find'
+  post 'people/find'
   get 'people', to: 'people#index'
   get 'people/add'
   post 'people/add', to: 'people#create'
